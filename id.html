@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            background-color: rgb(206, 123, 95);
+        }
+        header{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 100px;
+            background-color: rgb(112, 25, 51);
+            color: white;
+            margin-top: auto;
+        }
+        nav{
+                display: flex;
+                flex-direction: row;
+                gap: 20px;
+                color: white;
+                justify-content: center;
+                align-items: center;
+        }
+        nav a{
+            display: flex;
+            flex-direction: row;
+            text-decoration: none;
+            color: rgb(206, 123, 95);
+        }
+        h2{
+            text-align: center;
+            color: rgb(206, 123, 95);
+        }
+        .container{
+            display: flex;
+            gap: 30px;
+        }
+        aside{
+            display: flex;
+            flex-direction: column;
+            background-color:white ;
+            border: 1px;
+            height: 70vh;
+            width: 220px;
+            border-radius: 0 10px 8px;
+            box-shadow: 8px 8px 8px ;
+        }
+        aside h2{
+            margin-left: 10px;
+            font-size: 1.5rem;
+            color: rgb(112, 25, 51);
+        }
+        .vertical-nav{
+            display: flex;
+            flex-direction: column;
+        }
+        .vertical-nav a {
+            color: rgb(112, 25, 51);
+            border: 1px solid rgb(112, 25, 51);
+            margin: 10px;
+            border-radius: 5px;
+            text-decoration: none;
+            padding: 5px;
+            text-align: center;
+        }
+
+        img{
+           width:100px ;
+           height: 100px;
+           border-radius:50% ; 
+        }
+        .profile{
+            display: flex;
+            flex-direction: row;
+            gap: 25px;
+            margin-top: 20px;
+        }
+        .card{
+            border: 1px solid black;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            background-color: rgb(112, 25, 51);
+            color: rgb(206, 123, 95);
+            min-height: 400px;
+            gap: 20px;
+            width:300px ;
+            align-items: center;
+            text-align: center;
+        }
+        button{
+            background-color: rgb(206, 123, 95);
+            color: rgb(112, 25, 51);
+            border-radius: 3px;
+            border: 1px;
+            padding: 6px;
+        }
+        footer{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            background-color: rgb(112, 25, 51);
+            height: 70px;   
+             }
+        .box{
+            display: flex;
+            gap: 20px;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        footer p {
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h2>My Wedsite</h2>
+        <nav>
+            <a href="#Home">Home</a>
+            <a href="#about">Adout</a>
+            <a href="#Services">Services</a>
+            <a href="#Contact">Contact</a>
+        </nav>
+    </header>
+    <div class="container">
+        <aside>
+            <h2>Navigation</h2>
+            <div class="vertical-nav">
+             <a href="#Dashboard">Dashboard</a>
+             <a href="#profile">profile</a>
+             <a href="#setting">Setting</a>
+             <a href="#Model">Model</a>
+             <a href="#Invite">Invite</a>
+             <a href="#Transaction">Transaction</a>
+             <a href="#Payment">Payment</a>
+            </div>
+        </aside>
+     <main>
+        <h2 style="color: rgb(112, 25, 51) ; text-align: center;">Profile Cards</h2>
+        <div class="profile">
+            <div class="card">
+            <img src="pic.jpeg" alt="profile picture">
+            <h3>Ada Loverlace</h3>
+            <p>Mathematician and writier, known for her work on early computer</p>
+            <button>View Profile</button>
+            </div>
+        
+            <div class="card">
+            <img src="pic.jpeg" alt="profile picture">
+            <h3>Grace Hopper</h3>
+            <p>Computer Scientist and US Navy rear admiral. Pioneer of programming language</p>
+            <button>View Profile</button>
+            </div>
+            
+            <div class="card">
+            <img src="pic.jpeg" alt="profile picture">
+            <h3>Alan Turing</h3>
+            <p>Father of theoretical computer science and artifical intelligence</p>
+            <button>View Profile</button>
+            </div>
+        </div>
+     </main>  
+     </div>
+    <footer>
+                <div class="box">
+                <a href="#Privacy">Privacy</a>
+                <a href="#Terms">Terms</a>
+                <a href="#Help">Help</a>
+                </div>
+                <p>&copy; 2025 My Website</p>
+                
+    </footer>
+</body>
+</html>
