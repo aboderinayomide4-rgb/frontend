@@ -243,7 +243,7 @@
        .status1 button{
         margin-left: 10px;
         border: 1px solid black;
-        width: 100px;
+        width: 200px;
         height: 50px;
         background-color: white;
         color: black;
@@ -267,7 +267,7 @@
        .status2 button{
         margin-left: 10px;
         border: 1px solid black;
-        width: 100px;
+        width: 200px;
         height: 50px;
         background-color: white;
         color: black;
@@ -291,7 +291,7 @@
        .status3 button{
         margin-left: 10px;
         border: 1px solid black;
-        width: 100px;
+        width: 200px;
         height: 50px;
         background-color: white;
         color: black;
@@ -307,15 +307,17 @@
        .status4 h2{
         margin-left: 10px;
         margin-top: 10px;
+
        }
         .status4 h3{
         margin-left: 10px;
         margin-top: 10px;
+        
        }
        .status4 button{
         margin-left: 10px;
         border: 1px solid black;
-        width: 100px;
+        width: 200px;
         height: 50px;
         background-color: white;
         color: black;
@@ -324,7 +326,7 @@
        .hero2{
          background: linear-gradient(90deg, rgba(0, 0, 0, .78), rgba(0, 0, 0, .12)), 
             url('https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=1900') center/cover no-repeat;
-            min-height: 600px;
+            min-height: 400px;
             margin-top: 50px;
             width: 100%;
        }
@@ -352,11 +354,115 @@
             font-size: small;
         }
         .text2 button{
-            width: 150px;
+            width: 200px;
             height: 50px;
             background-color: rgb(132, 87, 5);
             color: white;
-            border: 1px;}
+            border: 1px;
+        }
+         .section{
+            text-align: center;
+            margin-top: 40px;
+            gap: 10px;
+            }
+            .section p{
+            color: rgb(133, 91, 13);
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: small;
+            }
+            .section h2{
+            font-size: 40px;
+            }
+            .section h3{
+             color: rgb(129, 126, 126);
+            font-size: 20px;
+            }
+            .section input{
+            height: 30px;
+            border: 1px solid white;
+            box-shadow: 0px 0px 1px 1px;
+            padding: 5px;
+            width: 500px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            }
+            /* Footer Container */
+.site-footer {
+  background-color: #0f1115; /* Dark background color */
+  color: #ffffff;
+  padding: 60px 40px 20px 40px;
+  font-family: sans-serif;
+}
+
+/* Main Content Flex Layout */
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Brand Section */
+.footer-brand h3 {
+  font-size: 24px;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.footer-brand p {
+  color: #a0a0a0;
+  font-size: 14px;
+}
+
+/* Links Columns Container */
+.footer-links-container {
+  display: flex;
+  gap: 80px;
+  flex-wrap: wrap;
+}
+
+/* Individual Columns */
+.footer-col h4 {
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 12px;
+}
+
+.footer-col ul li a {
+  color: #a0a0a0;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.2s ease;
+}
+
+.footer-col ul li a:hover {
+  color: #ffffff;
+}
+
+/* Bottom Copyright */
+.footer-bottom {
+  text-align: center;
+  padding-top: 20px;
+  color: #777777;
+  font-size: 12px;
+}
     </style>
  </head>
  <body>
@@ -433,7 +539,7 @@
             <img src="photo-1793918890672-16f4d8427eb1.avif" alt="profile picture">
             <p>Girl's Clothing</p>
            <h2>Elegant Summer Dress</h2>
-           <h3>$65,000</h3>
+           <h3> $65,000 <del style="color: grey;">$15,000</del></h3>
            <button>ADD TO CART</button>
         </div>
         <div class="status3">
@@ -447,7 +553,7 @@
             <img src="https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=700" alt="profile picture">
             <p>ACCESSORIES</p>
            <h2>Luxury Leather Handbag</h2>
-           <h3>$95,000</h3>
+           <h3>$95,000 <del style="color: grey;">$140,000</del></h3>
            <button>ADD TO CART</button>
         </div>
     </div>
@@ -459,5 +565,60 @@
            <button>EXPLORE DEALS→</button>
         </div>
     </div>
+    <div class="section">
+        <p>STAY IN THE LOOP</p>
+        <h2>Get 10% Off Your First <br> Order</h2>
+        <h3>Subscribe to receive exclusive offer and new arrivials.</h3>
+        <form action="subtitle">
+        <input type="input" placeholder="Enter Your email address">
+        </form>
+    </div>
+    <footer class="site-footer">
+  <div class="footer-content">
+    <div class="footer-brand">
+      <h3>LUXE.</h3>
+      <p>Fashion that defines your individuality.</p>
+    </div>
+    <div class="footer-links-container">
+      <!-- Column 1: Quick Links -->
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Shop</a></li>
+          <li><a href="#">Categories</a></li>
+        </ul>
+      </div>
+
+    
+      <div class="footer-col">
+        <h4>Customer Service</h4>
+        <ul>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Shipping Policy</a></li>
+          <li><a href="#">Returns & Refunds</a></li>
+        </ul>
+      </div>
+
+    
+      <div class="footer-col">
+        <h4>Follow Us</h4>
+        <ul>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">TikTok</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="footer-bottom">
+    <p>&copy; 2026 LUXE STORE. All rights reserved.</p>
+  </div>
+</footer>
+    </div>
+ </body>
+ </html>
  </body>
  </html>

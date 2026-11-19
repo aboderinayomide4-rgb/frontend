@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <style>
+        .container{
+            display: grid;
+            width: 800px;
+            background-color: aliceblue;
+            height: 400px;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+        }
+        .container div{
+            background-color: blue;
+            color: white;
+            
+        }
+        .item1{
+            grid-row-start: 1;
+            grid-row-end:3 ;
+        }
+        .bid{
+            
+        }
+    </style>
+</head>
+<body>
+   <div class="container">
+    <div class="item1">apple</div>
+    <div>mango</div>
+    <div>coconut</div>
+    <div class="bid">nut</div>
+    <div>banana</div>
+    <div>powpow</div>
+    <div>cucuber</div>
+    <div>water</div>
+    <div>pig</div>
+    
+   </div>
+</body>
+</html>
